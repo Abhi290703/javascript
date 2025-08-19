@@ -64,8 +64,9 @@ else{
 
 // switch condition
 
-let operator;
-let b = 5, c = 6 ;
+
+let operator ="+";
+let  b = 5, c = 6 ;
 switch  (operator) {
 
     case "+" :
