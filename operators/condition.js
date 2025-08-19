@@ -48,7 +48,7 @@ else{
 
 // nested else if condition
 
-let age = prompt("Enter your age:");
+let age = 18;
 if (age == 18){
     console.log("eligible for driving test");
 }
