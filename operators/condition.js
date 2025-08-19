@@ -61,3 +61,25 @@ else if (age > 22){
 else{
     console.log("not eligible for driving test");
 }
+
+// switch condition
+
+let operator;
+let b = 5, c = 6 ;
+switch  (operator) {
+
+    case "+" :
+        console.log(b + c);
+        break;
+    case "-" :
+        console.log(b - c);
+        break;
+    case "*" :
+        console.log(b * c);
+        break;
+    case "/" :
+        console.log(b / c);
+        break;
+    default:
+        console.log("Invalid operator");
+}
