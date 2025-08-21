@@ -119,36 +119,36 @@
 // }
 
 //program 6
-let role = "watch man";
-let department;
-switch(role) {
-    case "admin":
-        if(department == "role"){
-            console.log("Edit Access Granted")
-        }
-        else{
-            console.log("view only Access")
-        }
-        break;
-    case "manager":
-        if(department == "role"){
-            console.log("Edit Access Granted")
-        }
-        else{
-            console.log("view only Access")
-        }
-        break;
-    case "employee":
-        if(department == "role"){
-            console.log("Edit Access Granted")
-        }
-        else{
-            console.log("view only Access")
-        }  
-        break;
-    default:
-        console.log("only Access")
-}
+// let role = "watch man";
+// let department;
+// switch(role) {
+//     case "admin":
+//         if(department == "role"){
+//             console.log("Edit Access Granted")
+//         }
+//         else{
+//             console.log("view only Access")
+//         }
+//         break;
+//     case "manager":
+//         if(department == "role"){
+//             console.log("Edit Access Granted")
+//         }
+//         else{
+//             console.log("view only Access")
+//         }
+//         break;
+//     case "employee":
+//         if(department == "role"){
+//             console.log("Edit Access Granted")
+//         }
+//         else{
+//             console.log("view only Access")
+//         }  
+//         break;
+//     default:
+//         console.log("only Access")
+// }
 
 // program 7
 
@@ -183,6 +183,38 @@ switch(role) {
 //     }
 
 
+// program 8
+
+let plan = "basic";
+let user='student';
+switch(plan) {
+    case "standard":
+        if (user == "student"){
+            console.log("Extra discount for student")
+        }
+         else {
+            console.log("standard price applied")
+        }
+        break;
+    case "basic":
+        if (user == "student"){
+            console.log("Extra discount for student")
+        }
+        else {
+            console.log("basic price applied")
+        }
+        break;
+    case "premium":
+        if (user == "student"){
+            console.log("Extra discount for student")
+        }
+        else {
+            console.log("premium price applied")
+        }
+        break;
+    default:
+        console.log("All plans are same")
+}
 
 
 
