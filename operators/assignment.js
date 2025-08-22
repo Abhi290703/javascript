@@ -185,36 +185,57 @@
 
 // program 8
 
-let plan = "basic";
-let user='student';
-switch(plan) {
-    case "standard":
-        if (user == "student"){
-            console.log("Extra discount for student")
-        }
-         else {
-            console.log("standard price applied")
-        }
-        break;
-    case "basic":
-        if (user == "student"){
-            console.log("Extra discount for student")
-        }
-        else {
-            console.log("basic price applied")
-        }
-        break;
-    case "premium":
-        if (user == "student"){
-            console.log("Extra discount for student")
-        }
-        else {
-            console.log("premium price applied")
-        }
-        break;
-    default:
-        console.log("All plans are same")
+// let plan = "basic";
+// let user='student';
+// switch(plan) {
+//     case "standard":
+//         if (user == "student"){
+//             console.log("Extra discount for student")
+//         }
+//          else {
+//             console.log("standard price applied")
+//         }
+//         break;
+//     case "basic":
+//         if (user == "student"){
+//             console.log("Extra discount for student")
+//         }
+//         else {
+//             console.log("basic price applied")
+//         }
+//         break;
+//     case "premium":
+//         if (user == "student"){
+//             console.log("Extra discount for student")
+//         }
+//         else {
+//             console.log("premium price applied")
+//         }
+//         break;
+//     default:
+//         console.log("All plans are same")
+// }
+
+// program 9
+
+let money = 900;
+let prime = true;
+if (money > 1000){
+    if(prime == true){
+        console.log("FreeDelivery and 20 percent Discount")
+    }
+    else{
+        console.log("FreeDelivery and 10 percent Discount")
+    }
 }
-
-
-
+if (money > 500 && money <= 1000){
+    if(prime == true){
+        console.log("10 percent Discount")
+    }
+    else{
+        console.log("Delivery charges 50%")
+    }
+}
+if (money < 500){
+    console.log("Delivery charges 100%")
+}
