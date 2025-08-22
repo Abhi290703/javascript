@@ -1,34 +1,4 @@
-= "cloudy";
-// let temp;
-// switch(weather) {
-//     case "sunny":
-//         if (temp == "weather"){
-//             console.log("stay inside")
-//         }
-//         else{
-//             console.log("Wear Protection")
-//         }
-//         break;
-//     case "rainy":
-//         if(temp == "weather"){
-//             console.log("stay inside")
-//         }
-//         else{
-//             console.log("Wear Protection")
-//         }
-//     case "snow":
-//         if(temp == "weather"){
-//             console.log("stay inside")
-//         }
-//         else{
-//             console.log("Wear Protection")
-//         }
-//         break;
-// default:
-//     console.log("you can go out")
-//     }
-
-
-
-
-
+t a = 100;
+// for (i=1;a<100;console.log("hello")){
+//     console.log(a);
+//  }
