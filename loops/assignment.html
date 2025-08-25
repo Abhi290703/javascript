@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+</head>
+<body>
+  <h2>Products:</h2>
+  <ul id="productList"></ul>
+
+  <script>
+    let products = ["Laptop", "Mobile", "Camera", "Shoes", "Earphones"];
+    let list = document.getElementById("productList");
+
+    for (let i = 0; i < products.length; i++) {
+      list.innerHTML += "<li>" + products[i] + "</li>";
+    }
+  </script>
+</body>
+</html>
