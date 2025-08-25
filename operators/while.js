@@ -43,17 +43,22 @@ while (j >= row1){
     console.log(pattern1);
 }
 
-let n = 1;
-let row2 = 5;
-while (n <= row2) {
-    let pattern2 = "";
-    let m = 1;
-    while (m <= n) {
-        pattern2 += "* ";
-        m++;
-    }
-    n++;
-    console.log(pattern2);
-}
+
+// 2 time in rigth angle triangle
+// let n = 1;
+// let row2 = 5;
+// while (n <= row2) {
+//     let pattern2 = "";
+//     let m = 1;
+//     while (m <= n) {
+//         pattern2 += "* ";
+//         m++;
+//     }
+//     n++;
+//     console.log(pattern2);
+// }
+
+// console.log("*****************");
+
 
 
