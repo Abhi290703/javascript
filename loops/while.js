@@ -181,3 +181,9 @@ while(count<=3){
         console.log("your card is blocked");
     }
 }
+
+let hello = "hello world";
+while(hello){
+    console.log(hello);   
+    hello = " "
+}
