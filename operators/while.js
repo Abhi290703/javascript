@@ -42,3 +42,18 @@ while (j >= row1){
     j--;
     console.log(pattern1);
 }
+
+let n = 1;
+let row2 = 5;
+while (n <= row2) {
+    let pattern2 = "";
+    let m = 1;
+    while (m <= n) {
+        pattern2 += "* ";
+        m++;
+    }
+    n++;
+    console.log(pattern2);
+}
+
+
