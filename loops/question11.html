@@ -9,9 +9,17 @@
     <h2>Add to cart</h2>
     <div id="cart"></div>
     <script>
-        let items=prompt("Enter items");
-        let cart = [];
-       
+        let cart = document.getElementById("cart");
+        let item = 5;
+        let items = [];
+        while( item > 0){
+            let user = prompt("enter items");
+            items.push(user);
+            item--;
+        }
+        for(let i = 0; i < items.length; i++){
+            cart.innerHTML += `<ol><li>${items[i]}</li></ol>`;
+        }   
     </script>
     
 </body>
