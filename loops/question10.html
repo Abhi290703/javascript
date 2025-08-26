@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 products</title>
+</head>
+<body>
+    <h2>products</h2>
+    <ul id="product-list"></ul>
+    <!-- <ul>
+        <li>laptop</li>
+        <li>mobile</li>
+        <li>camera</li>
+    </ul> -->
+    <script>
+        let products = ["laptop", "mobile", "camera", "shoes", "tablet"];
+        for (let i = 0; i < 3; i++){
+            document.getElementById("product-list").innerHTML += '<li>' + products[i] + '</li>';
+        }
+    </script>
+</body>
+</html>

@@ -1,19 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Product List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
 </head>
 <body>
-  <h2>Products:</h2>
-  <ul id="productList"></ul>
+    <h2>Product List</h2>
+    <ul id="product-list"></ul>
+    <script>
+        let products = ["Laptop", "Mobile", "Camera", "Shoes", "Earphones"];
+        let listproduct = document.getElementById("product-list");
 
+        for (let i = 0; i < products.length; i++){
+            listproduct.innerHTML += '<li>' + products[i] + '</li>';
+        }
+    </script>
+</body>
+</html>
+
+<br>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Price Table</title>
+</head>
+<body>
+  <h2>Price List</h2>
+  <table id="priceTable" border="1">
+    <tr>
+      <th>Original Price</th>
+      <th>10% Discounted Price</th>
+    </tr>
+    <tr>
+        <td>${prices}</td>
+        <td>${discount}</td>
+    </tr>
+  </table>
   <script>
-    let products = ["Laptop", "Mobile", "Camera", "Shoes", "Earphones"];
-    let list = document.getElementById("productList");
+    let prices = [100, 250, 400, 600, 1200];
+    let table = document.getElementById("priceTable");
 
-    for (let i = 0; i < products.length; i++) {
-      list.innerHTML += "<li>" + products[i] + "</li>";
+    for (let i = 0; i < prices.length; i++) {
+      let discount = prices[i] - (prices[i] * 0.1);
+      table.innerHTML += `
+      <tr>
+        <td>${prices[i]}</td>
+        <td>${discount}</td>
+      </tr>`;
     }
   </script>
 </body>
-</html>
+</html> 
+
+
+<hr>
+<br>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product cards</title>
+</head>
+<body>
+    <h2>product cards</h2>
+    <div id="product-cards"></div>
+    <script>
+        const products1 = [{name: "shirt" , price:500 , category:"clothing"},
+            {name: "watch" , price: 1200 , category:"accessories"}
+        ];
+        for(let i=0; i<products1.length; i++){
+            console.log("name", products1[i].name);
+            console.log("price", products1[i].price);
+            console.log("category", products1[i].category);
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!-- 4. Build Order Summary Table -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+ </head>
+ <body>
+        <h2>order summary table</h2>
+        <div id="order-summary"></div>
+        <table border="1">
+            <tr>
+                <th>S.NO</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>watch</td>
+                <td>2</td>
+                <td>$100</td>
+            </tr>
+
+        </table>
+ </body>
+ </html>    
