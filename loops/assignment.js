@@ -27,16 +27,26 @@
 
 // 9 . Show Stock-Based Product List
 
-product = ["laptop" , "bag" , "belt" , "shoe"]
-stock = [10, 5, 0, 8]
-let j = 0;
-while(j < product.length){
-    if(stock[j] <= 0){
-        console.log(product[j] + " is out of stock");
-    }
+// product = ["laptop" , "bag" , "belt" , "shoe"]
+// stock = [10, 5, 0, 8]
+// let j = 0;
+// while(j < product.length){
+//     if(stock[j] <= 0){
+//         console.log(product[j] + " is out of stock");
+//     }
     
-console.log(`${product[j]} is in stock with quantity: ${stock[j]}`)
-j++;
-}
+// console.log(`${product[j]} is in stock with quantity: ${stock[j]}`)
+// j++;
+// }
 
-// 11. Add to Cart Simulation
+// 12. Show Cart Status At Least Once
+let cart1 = []
+do{
+    if(cart1.length == 0){
+        console.log("Cart is empty");
+    }
+}while(cart1.length > 0);
+
+// // 13. Flash Sale Display
+// // Display product prices after applying 20% discount using do...while.
+// let product = ["laptop", "shoe", "bag", ""]
