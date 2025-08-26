@@ -40,13 +40,59 @@
 // }
 
 // 12. Show Cart Status At Least Once
-let cart1 = []
-do{
-    if(cart1.length == 0){
-        console.log("Cart is empty");
-    }
-}while(cart1.length > 0);
+// let cart1 = []
+// do{
+//     if(cart1.length == 0){
+//         console.log("Cart is empty");
+//     }
+// }while(cart1.length > 0);
 
-// // 13. Flash Sale Display
-// // Display product prices after applying 20% discount using do...while.
-// let product = ["laptop", "shoe", "bag", ""]
+ // 13. Flash Sale Display
+ // Display product prices after applying 20% discount using do...while.
+//  let product = ["laptop", "shoe", "bag", "tv"];
+//  let prices = [100, 200, 300, 400, 2000];
+//  let  i = 0;
+//  do{
+//     if(prices[i] > 0){
+//         let discountprice = prices[i] - (prices[i] * 0.2);
+//         console.log(`the price of ${product[i]} is ${discountprice}`);
+//     }
+//     i++;
+    
+// }while(i < product.length);
+
+// 14. Wishlist Items
+// Use do...while to loop through a wishlist array and display items using innerHTML.
+// let whishlist = ["laptop", "shoe", "bag", "tv"];
+// let j = 0;
+// do {
+//     document.body.innerHTML += `<div>${whishlist[j]}</div>`;
+//     j++;
+// } while (j < whishlist.length);
+
+// 15.  15. Add Product Until Stock Zero
+// Simulate a product being added until stock reduces to 0. Show how many times it was added
+let stock = 10;
+let addcount = 0;
+do{
+    stock --;
+    addcount ++;
+}while(stock > 0);
+console.log(`product added ${addcount} times`)
+
+// 16. Category-wise Product Display (Nested Loop)
+// Use nested for loops. Outer array: categories. Inner array: products in that category.
+let categories = ["Electronics", "Clothing", "Books"];
+let innerArray = [["laptop", "mobile", "tv"],["shirt", "jeans"],["novel", "magazine"]];
+for (let i=0 ; i<categories.length; i++){
+    console.log(categories[i]);
+    for (let k=0; k<innerArray[i].length; k++){
+        console.log(" "+innerArray[i][k])
+    }
+    }
+
+// 19. Show Products by Type
+// Group products as "Clothing", "Electronics", "Accessories" and show them in divs. (Use condition in loop.)
+// let products = [
+//     { name: "laptop", type: "Electronics" },
+
