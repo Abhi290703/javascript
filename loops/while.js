@@ -101,11 +101,11 @@
 // }
 // console.log(`available items ${stockitems} and purchased items ${purchased} try to remove ${stockitems - purchased}`)\
 
-let a = 0;
-while (a<=10){
-    console.log(a);
-    a++;
-}
+// let a = 0;
+// while (a<=10){
+//     console.log(a);
+//     a++;
+// }
 
 
 // let count = 1;
@@ -160,30 +160,48 @@ while (a<=10){
 // }
 
 
-let count = 4;
-let pin = 2346;
-do{
-    console.log("Welcome to ICICI bank");
-    if (pin == 2345){
-        console.log("transcation success")
-    }
-    else if(count == 3){}
-    else{
-        console.log("Enter valid pin");
-    }
-    count ++
-}
-while(count<=3){
-    if(count == 3){
-        console.log("over limited")
-    }
-    else{
-        console.log("your card is blocked");
-    }
+// let count = 4;
+// let pin = 2346;
+// do{
+//     console.log("Welcome to ICICI bank");
+//     if (pin == 2345){
+//         console.log("transcation success")
+//     }
+//     else if(count == 3){}
+//     else{
+//         console.log("Enter valid pin");
+//     }
+//     count ++
+// }
+// while(count<=3){
+//     if(count == 3){
+//         console.log("over limited")
+//     }
+//     else{
+//         console.log("your card is blocked");
+//     }
+// }
+
+// let hello = "hello world";
+// while(hello){
+//     console.log(hello);   
+//     hello = " "
+// }
+
+
+// sample programs
+/* less than 3 program */
+
+let a = 10;
+while(a <= 5){
+    console.log(a);
+    a++;
 }
 
-let hello = "hello world";
-while(hello){
-    console.log(hello);   
-    hello = " "
-}
+
+
+
+
+
+
+
