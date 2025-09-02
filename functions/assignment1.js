@@ -16,3 +16,4 @@ function fizzbuzz(num){
     }
 }
 console.log(fizzbuzz(15))
+
