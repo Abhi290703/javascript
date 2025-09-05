@@ -29,7 +29,7 @@ function function name(){
 
 //     output : 11
 
-// 3. function with return and without return
+// 3. function with return and with return
 
 // program : function add(n,m){
 //              return sum = a + b
@@ -95,10 +95,57 @@ console.log(cars)
 // console.log(cars.join[' ']);
 
 // 8.slice
-console.log(cars.slice(1,6))
+// console.log(cars.slice(1,6))
 
-// 9.splice
-console.log(cars.splice(1,6),"volovo")
+// // 9.splice
+// console.log(cars.splice(1,6),"volovo")
+
+/* anonoyus function  
+
+1. In anonoyus function where we will not declare the function name and parameter where we directly 
+declare the function by using paranthesis "()"
+
+2. syntax :
+                function(){
+                    // block of code
+                }
+                    call function()
+
+
+example :
+            (function() {
+            console.log("Anonymous function");
+            })
+*/
+
+/*  Function Expression
+
+1. function expression means you create a variable and you will assign it to. instead of giving name 
+    directly in function(parameter)
+
+2. function expression is also called has anonymous function
+
+syntax :
+            let variable function(){
+                block of code
+            }
+            call function ()
+
+
+example :
+            let greet = function(name){
+                console.log("hello!")
+            }
+                function(Abhi)
+*/
+
+
+// program 1 function expression :
+
+    let greet = function(name){
+        return "hello" + name ;
+    }
+   console.log("Abhi")
 
 
 
