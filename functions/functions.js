@@ -59,36 +59,36 @@ function function name(){
 
 
 // 1. length
-cars = ["volvo","BMW","Jaguar","Benz","Audi","Range_Rover","Rolls_Royes"]
+// cars = ["volvo","BMW","Jaguar","Benz","Audi","Range_Rover","Rolls_Royes"]
 
-console.log(cars);
-// // cars.indexof(5);
-// console.log(cars.include('TATA'));
+// console.log(cars);
+// // // cars.indexof(5);
+// // console.log(cars.include('TATA'));
 
 
-//  2. POP
-console.log(cars);
-cars .pop()
-console.log(cars);
+// //  2. POP
+// console.log(cars);
+// cars .pop()
+// console.log(cars);
 
-// 3. push
-console.log(cars)
-cars.push("byd")
-console.log(cars)
+// // 3. push
+// console.log(cars)
+// cars.push("byd")
+// console.log(cars)
 
-// 4. shift
-console.log(cars)
-cars.shift()
-console.log(cars)
+// // 4. shift
+// console.log(cars)
+// cars.shift()
+// console.log(cars)
 
-// 5.unshift
-cars.unshift()
-console.log(cars)
+// // 5.unshift
+// cars.unshift()
+// console.log(cars)
 
-// 6. concate
-let new_cars
-let a  = cars.new_casr
-console.log(cars)
+// // 6. concate
+// let new_cars
+// let a  = cars.new_casr
+// console.log(cars)
 
 // 7.join
 // console.log(cars)
