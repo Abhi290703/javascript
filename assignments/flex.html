@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>flex </title>
+    <style>
+        .item{
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: blanchedalmond;
+            text-align: center;
+            align-content: center;
+            height: 300px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        .flexcontainer{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        header{
+            color: white;
+            background-color: darkseagreen;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            text-align: center;
+            position: sticky;
+            top: 10px;
+        }   
+        header img{
+            list-style: none;
+            border-radius: 0px;
+        }
+        .linkcontainer{
+           display: flex;
+           justify-content: space-between;
+            column-gap: 10px;
+        }
+        ul li{
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            border: 2px solid white ;
+        }
+        footer div{
+            display: flex;
+        }
+        img{
+            border: 3px solid black;
+        }
+        .banner{
+            width: 100%;
+            display:block;
+            margin: 15px;
+            /* height: 100px; */
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../layouts/Assests/product.jpg" alt="product">
+        <h2>E-Commerce</h2>
+        <ul class="linkcontainer">
+           <li class="link"><a href="#" style="color: white;">Home</a><i class="fa-solid fa-house"><span style="width: 20px; height: 20px;"></span></i></li>
+           <li class="link"><a href="#" style="color: white;">Product</a></li>
+           <li class="link"><a href="#" style="color: white;">Cart</a><i class="fa-solid fa-cart-shopping"><span style="width: 20px; height: 20px; position: relative; bottom: 10px;">2</span></i></li>
+           <li class="link"><a href="#" style="color: white;">About</a></li>
+        </ul>
+    </header>
+    <section>
+        <!-- banner -->
+        <div class="banner">
+                <img src="/layouts/Assests/flip2.jpeg" alt="banner" style="width: 100%;">
+        </div>
+        <!-- flip card
+        <div class="main">
+        <div class="cardcontainer">
+        <div class="flipcard">
+            <div class="facecard Front">Front</div>
+            <div class="facecard Back">Back</div>
+        </div>
+    </div>
+    </div> -->
+        <!-- items -->
+    <div class="flexcontainer">
+        <div class="item">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA8AMBEQACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQQGAgUHAwj/xAA8EAABAwMCBAIIBAUDBQEAAAABAAIDBAUREiEGMUFRE2EHFCIyQnGBkSNSodEVcrHB4SRDYiUzVLLxFv/EABoBAQACAwEAAAAAAAAAAAAAAAABAgMEBQb/xAAwEQACAgEEAAUCBQMFAAAAAAAAAQIDEQQSITEFEyJBUTJhFEJx0fAjkeEVUqGxwf/aAAwDAQACEQMRAD8A6swLYKGagAgBSAQgEAwgMsIAQAgBANACAagAhA8IBoAUEggGgBACAagAgBACAEA0AIBEICKFYsNCAQAgGgBSQMIBoAQAgGFAGEAYQDwgGgBQAQAgBANACAEYGoAIAQDQAgBACASAiqxYaAEIAIBoBgIQNSAQAgGoA8ZQDwgFJIyFjnyvaxjebnnAH1TAItNdbdUyeHT19LK88msmaSVO1/BGUTFUkEAIAQDQAgBANQAQAgBANACAEAIBICKpLDUgAhA0ABAZBACkgEAwoA8IB8kB51VRBSQPnqpGxRMGXOcpjFye2PZSycYRcpPCOWcfcQR3ym8GJjo6anJkaTsXO5Zx2W/HSKEHKfZyf9SlZdGFa4KNc7oaKOngjA1Pbrc4/oteU8cHXS9zpvok4klukFRb6uUvfE0SQlxyQ3k4fTb7lYppYUkF8HRVjLAgBACAEyAUAaAEAIBoAQAgBACAEBEUlhqSQQqNAMBAMIAQgaAEBkEBlkackgDnkqPsH1z0cr4t4gfd64xwOIo4XER7+8fzFdnTUeVHL7Z5nXat3zaX0roq9xy6hmDRk6eQWS5N1v8AQw6RpaiDfyU/iDLpIJtyx0ejPmFxpHrUu8Gz4H4idYLtBVtGrQcObnGtp5hFysMho+iLHe6C+Uzai3ztfkZfHkamHsQsbTQNkoAdMoAIwgBACAEAIBoAQAgBACAEAICKpLApA0DBCDIIAQAgGhAwhJkBtyyoBSOOLrXNayKkkMVI5zmSFp3ce3yW9o64SlmRxvE77EsR4RQhjHNdXs4YjhUZKRq6u0OcyQQxsmp5CC6F5xg9wei0LdNnmJ2tN4kopRt/uV+oswjccesU57SRFw+4WnKqa9jq16iqa9Mkz0ohV0bw6Cue17eT4mPDh9QkVIl2VruSLVRcY8RRNbF/+onjB/8AIpQ/P1cCVOz5QjOD6eR3fjbi60T0rv44+dkzC4kwRFjiDuBhu2xb1SUNuPuRG2MpSiu49nT/AEdcYHiu3P8AWWMZWwYEmj3XD8wHRYpxxyXTyW3mqkggBANACAEAIAQAgBACAiqSwIBqQAQgyCAEAIBoDIIAeSG+zsTtlY5MsitXe3x1DJqWcew7cO/Ke4WxRbse5HN1NKmnFnNq+knt9W+mqW4LeThycO4Xarmprg4FlTg8Milyu0VSASADPbmFjwTjng9fGzzPyQrgDLJzacYVoLPZPCPGSoY+J/rDG6dWgtkbnJ/bkpxCWcoyKElJbX9xC3271N9JUyPzVOLKcEamwyEbEdlrW0Qiu+zYhq9RZJOK+nl/LXwbTgmkoLFUwlly8Q62mV8Zw/byyRz6IqFGtqKyzHdrbLLoympRhnPH86O0Me2RjXsILXDII5ELjYa4Z6dSUluXuZISCAEAIAQAgBACAEAkBGUlgQDUkghUYQDQAgGgMggPKWeNtTFTuyHvY57d+YBaD/7BY5lkeVwoxUs1MOmQcj38lEZbXkpZWprkq15tkNwhNNWMdFIz3JMbtPl3C6FFjTzE4+op9pHPbnRzW+pME+M82uHJw7hdSuxWLKObKDi8MjD2jjqrNFegBOk7nbsqk+5JieRgnHmFVvHJTHsTGUsMoGQDn3QeqjzZZIjF/J41kcEzxT1EUgjic2Qva7GMeayTUbI8kUTspe9Pl8BXWyOrgjp7TR09NDVEST1ROeTgd8b/AFz0WvOttPYZKNTss3aibe3hLHz+x2e0yUjqKOChnZOyBojJaT0Hn/lciyM4vM1hs9Np7KZxxU00iYsZnBSQCAEAIAQAgBAJACAjKSwIAUgaBgEIMkAIBoDJQwc04s46bDc6VlFAxzqWc6XOd7cmdnNDexG2PktuWkShmUuTRr1vmWOMY8L3LvZr1SXihZV0UmqM7Oa73o3dWuHQrn7Xk6OSXM2OVv4kbJB2e3Kuk0Ukk+0Qrja6O40b6aqgjMZG2kaS09xjkVlrlKD3R7MdlcZx2tcHL+JOHKmyTaiHSUbz+HOBy8ndvmuvRqY2rD7OHqdJKp5XRqWDfzPRbDRovgbDoyMH2eg6KmA+eSfRya4Q0DJByMbfY9FikgvqwT3u0Q+NThrnaTgO5eWVlrtbe1mtZp4rlvgGujipSHwugkm3zTx5cCds7A75wrSWHwUe6clzlL5LPwFcrfSVk1qdNI6vkOczy5e7bONPTbPJc3W1trKlnHaO54TaunDG7prp49i9+XVc473YkIBSAQAgBACAEAIBFARlJYEAIAUgaEMAgMggMggNXxTWuoLBW1LA7MceTo97BO+PPGVepZmjFdJKDyz5tr7iHcTGoo4pXQQyHwI5CdQGc4+ed/qsysk7t3Zi8mP4fYnjPujf0fEtTYqhtbRwvp3v/wC9C7LmP/mxyO+x5rNfCElnGGa2jlZFuO/dH+dHVuFONbZxHCGwv8GraPxKaQ757tPxDz+60nHHB0clma4EbFVBhPDFUQvhmYHxu2cxwyCpTaeUQ0nw1wc54o4Rkt5NZb8vpc5MY96L9wunptWp+mzs4+r0Wz1Q6K072n6gOY5Dut1o5S+GZ0rjqLMZyd1ja4LS45N1Rv8AEiwfaHfqcd/NYU3F5QnFSWBR+strGgOHhMGRnutrO5ZNKcYVppds9Ia232q403EVTBI3wnYe/GQW4LRnGcc9ita6EZQl7ZNvRXXVWxqh6se3X64Z1W2V9PdaGKtpJA+GUZa4LjTg4Swz1ldisjuRLVTIYlCAUgEAIAQAgBAIoCMpLAgBACAFIGChAwUA880yDlnpQ4ppm1FPSNkkfBG98b2xuGHSd++2CPmt7Tbao75ds5erVmol5cFxH5KdQ1VNIXzSUj4m599wcSfPlj9VvxnFvODnW1WLEVLP9kSGQNeyR1LN4sIIEkTxjbtg7+YKsop5wzFK1pqNiw/krNVTz0FUXwuezS7LHNOCN+60badrx7HYpvU4p+50LhT0g18DGwXyJ9VC3lUxN/Eb/M34vpusMqHjgzLUQziTwzpVtudHcqZlTQ1Ec8LviY7O/byWvtNnPWSYcOGHAFuMKn3LHPuMOHTQSev0DSadx/EYPgP7Lp6TU7ltkcTXaTbmyHRVDtNnYdcLdaOX+U2FDNjJcSc/r5rXlEs2TZmufFIWOw/8wO4WSqzD2mKytfUNoMlJFT1THSCRuhwjGRy6+Wyyy44xk1W35jnF4wbz0f3H+D+NbJw71CSUvpXFpBiJO7CD0zuCuZqdLKXrieg0filccV29v3/nz7/c6Kucd0WEAEIQJSAQAgBACASAiqSwIAQDQAgBCR55fqpIaKxxtxG+1UToLewy1rxghgyY298d1taehy9bXBzdZq4xflKWH/0cijp77U1D5dEVJGTkOETfEx55XQjC+T9kvY5s7dFBYy5P9XgkvdNRyMiq5wYZPZfK97sj7FZJboYTMMFC1OVa9S6Sx+xtm0zGsDsObJo0PJO5A5b9fIrLFJcmhK19Z47/AH/yQK+iZIMEZaep3wkluNii9x5PO1UfhE5A2OVWMNvBfVX7kW6z2lssxnt9RLS3MkAOg2Du5kbyc0ee++y1NXCPbWF8mTQam2GYp7svCX/v2RZ4LpVUFXFQ3+BsEkp0QVcW8Ex/KD8Dj+U8+mVy8p9HpU3jJuXBskbmSND2OGHNI5qvTyi+E1g5hxVYzaa3MbSaaTeM9vJdnTXq2PPZ53WaZ0z46ZqqZwEnXf8AVZJI039JsGTaHb5wRzHVY+U8oNKUcMkxyPdMwMkAa0+2C3OW42+yzRnlcmnZUo9Rb+Cc3wpJWOl1vH/E/wBFEmscMimMlJNxePt2W/h+/CZwpKt2l3+08uzkdiVy9RpseuB6DQeI5l5N3Hx+zZY/otI7gihAlIBAJACAEAIQRcqxcMoBIAQDygAb7BQCuX/iQU2ult2l842fId2s8vMre0+kc1unwjja7xWNT2V8sorqLxHvdNGyZ59pxfq1E9855roNcccHFhqW23LnJi62REERxGJw3JbM4gj6qE0uy8rVJZjEyjop4y0skc8dnkOyr7o/JhfPaJgidpzI4OI97bqreZHGEa+15I8sI9k+yBjOpXXRCbRLsdknuUrSWmCkHN5GHP8AkFq3aqMOI8s6+m8NnbiVnCOiWq20tJEI6ZgZ+Z2N3fMrk23Tm/Ud2rS11rEFg2FZR09ZSyUtVC2WGRulzHdf8+awJ+5s49jTy1VJb7rTWZpkbK+l8WEyZIkDTggOzu4bH5EKyeUMDu9siutC+mmx7Q9l2PdKvXY65bkUuqVsNjOT1dLPbK+Smqm6JGHfbmOhC7cZqyO5HmLqZVNwkj3jOogg46YVWYE+CTCHNkJaRjG3kqyJXRKicWMZrI2dz+ErHgu8ZJIfg7agQc6h2V08GGccouPDl89ZY2jq3fjjZjyffH7rQ1On2vfDo7XhviO5eTb37P5/yWFaa5O0xKSBIAQgSAFOABQENSXBAGUAIBjqeQHMkoT9yqcQX+SbXS2x2lmMPnHM+Tf3XS02kx67DzXiPi65qpf6v9iuRU+hwH3XSPOSt3HqQ7HJGiu77i5OaVRoyKY2jLWjc7/CP79liceTPGzJm4ECTGlwJxp/qq4wXUso2VgtjKqpkqaiMOiibjB31OxyWPUW7I7Y9s6HhmmVtjslyo/8v/BuYZcy5wtF9Hofc3NPNHHCZJHhkbW5c55wAPn0WFpmVMmU87KiFsrCdLvdJGMhYmsMvnJBvlqp7pTM8SIGpp3GWkkDy0xyAYBz27jl3ToGr4YvLbzQudJGYK2neYaymcfahkHMfI8weoKs0SenEFgpr7S6JMR1DB+FMB7vke4Wam+VLz7GvqNPG+OH2c0rrfV2mqNJXxljxuOocB1B6rrxnC1bonmr6Z0ywwjlOsHO4H6dlLjnkwZa4JkL8uc0nGrrzB+ndU2lt3B7sJaGO06ceeQq4YbTPVshjkOkn2dwRzUoxSWeS7cO39laxlPVOAqMYDuj/wDK5+p02z1w6O/4b4j539K7iXz8m+dz8+q00dcxUgFJAIBIAQERSXBAGEAwEBUePbtLTNZQxOLA+PXIWnBcM4A/QroaKtP+ozi+LaiSapj79lAN5ZA8sMoac8g85W87q84bOXDS343RzgnxXHxmj25HM5nDyVkjt/KatsbPpm/7k2ExSj3nZV8mjNSXsSGRgHIKNmJyfwZ6M4PZVfQTaM2xueWxxgveT7LGj3isMsJZfRtU75YjFZbN7eLnb+ELTS09wn/1ErS7Qxpc6R3xYA3wMgfZcqU/Nm5+x7PT0fh6VX/MlapL7eLlJ/022CnjdynrjjA8mDcq+MlyxW62te+Oe91r6+Vp1NjPswsPkwbH5nJVWmuiyaLMK+PyWLymX3mQrmfmUeUxvNJxFHUO0XKwsgFxhOqRj2getsxgxl30GCeybGiykjYWq6R1ocx7HU9VGAZqWUjXHkc9tiD0I22+io0WzklXG3Ul1pTTVsQkaeR+Jp7g9FNdkq5bospbVC2O2SOc3/hats7jNCHVFHnHiNbuz+Yf3XVo1cLeHwzz+q8PnV6o8o08U3LC2mjmslMqMAEd/wCyiKw+Sk1lYJDJ2Ee1zV8QZgatj0e8LoxI3MmhufebzCq44WU8k1vMkp8L5L5w3dhcqd7XZ8SE41OO7h3XG1VHlS/U9b4drFqIOLXK/mTbHZax0BFSAQAgEUII4CkyCQZDKAMoSU30k0Y/h38TEsbfCZ4eHZy4k7AfcrPRqvKjKOP0Ofq9B59sbM9dnFalupxIGSTuVh5N94SwjY2KpMczaZ79IefYcTtnse2f6rd0uodbxLo52t0itjuj2dGp+GrwxrXCkLmkfC4Fb34yj/ccG3wzVNZUSZFw/dycepPB/wCRCPWUL8xr/wCk6t/kNlScJ10mDUyQwt6763fp+615+IVx+hZNmnwC+XM5JFntlnpLcAYWl0hGDI/clc23UWW98I9DpPD6NKvQsv5ZDvdDDVVcMr4mOkY0gEjln/4rUvCM9iyQHUQaNmj7LY3GHB5Ohe3kpIwYGV7PeBQkzbVBQ0SeranPkqlkiBW26krK2CvJlhrIdmzwvLHafynHvDfkVRxTLp4MrdxPV0tTJS32hkYxmSyvgGqKRmebwN2Oxz2wsco4L5LZTVcNVE2SGRkkTxs5rg5pHzCxNMk0l44QttzBkgHqtQ7/AHIhsfm1bVWrsr4fKNG/QVXcrh/b9io3HhK7UGSyNtTGPjg5/ULfr1dU/szjXeG318pZRp8PicWyAteObXDBW0sS6OdNOLxJYHLUNp4nSSu0MA3dlGkllkQjKx7Y9svPo6hrPVairqIxFFLgRsI9rbv+y5GsuVjS+D1Hh+j/AA0Hl5bLctM6L7EVJAIAQAUBFyrF8mDnoQeTpcKCUJsm+c7qGSUri/huG4TT1rq6sLidQgyHNbtjYdFjy0yzOW1sM1K9zXsccHbW3CyKbIcSCastI1wZHkeSsp57KOJbOH+P7laIxHFUOfAOUU7C4D68wrvbIpta6LjQ+luB7f8AVUbc9fCl5/QqvlxfuTukjZx+lO1ObqNHWDyw3908n4HmHrDxzXXYmKw2WWR+nPiVL9Ebfnjmp8nHZG9s39rpamCm1XCo9Yq5TrleBhoJ+Fo6NHIJn4I7JTomkclKkRgxNMw9E3jaYOoY3c1O8bDwktEbuSnzBsIz7K74HH6pvQweD7XVN90hyncicEaagrACDCXDr5qdyBXRYZ7XO+e0traCQg7U7z4ee+j3fpjChqLHJ6QcW8V24Btfaorgwf7sMb4nfUYIP6KHWNxsaf0ksziosd2jPUsg1hUdZO49puMKK4sLIuGrlWyHk2Wi0j7u2/qrRU49SwY5wrmsSimRKLhKpulxFxu1NBQxA5io4DkMHn3d5rJK6WMN5Mdemqg8xikX+FrIomxRMDGMGGtHIBaz7ybJmoAkAIAQApBCG4Uknm9pIQk8XxOKE5PJzJByCholMiyRSknLeao4stlGmunDra4Elm6bWNyK/LwDK8nQCssYr3KyYR+jeeQ+0Q0dcq+ImJtk+k9GFG1wdUua4dRhW9BXkslt4MstA5r4qJpePiKbvgYLFHG2Noa1oAHZY2yUj0VSxkEIGhIwoBlsgDZCQ27BAH2UAEIBAPUe6YAZOMZ2RICO6AEAIAQAgBSBHkgIce6syT0wFAGAEAaG9kAaG9ggDS0dAgMgAgA7oBgBMgNIAQgeEA0AIAQDQAgBAPKgBlAGUAZQDQAgBQAQAgAoAQApBg4qSGz/2Q==" alt="Shoe" width="150px" height="150px">
+            <b><p>Gym wear shoes</p></b>
+            <b><del>1000</del></b>
+            <b><ins>800</ins></b>
+            <!-- <b><div class="price">800</div></b> -->
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ1nj6-ImfaFPqFyB5IMW7IH6ykqGa6La0lA&s" alt="Sweat Shirt" width="150px" height="150px">
+           <b><p>Sweat Shirt</p></b>
+           <b><del>1500</del></b>
+            <b><ins>1000</ins></b>
+            <!-- <b><div class="price">1000</div></b> -->
+        </div>
+        <div class="item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKcRckC4dfAHEVYWBxK9wgpfAvPbAlxTFDZA&s" alt="Shirt" width="150px" height="150px" style="margin-top: 0px;">
+            <b><p>Shirt</p></b>
+            <b><del>700</del></b>
+            <b><ins>650</ins></b>
+            <!-- <b><div class="price">650</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/download.jpeg" alt="Pant" width="150px" height="175px">
+            <b><p>Pant</p></b>
+            <b><del>900</del></b>
+            <b><ins>700</ins></b>
+            <!-- <b><div class="price">700</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/budda.jpeg" alt="budda" height="175px">
+            <b><p>Budda</p></b>
+            <b><del>900</del></b>
+            <b><ins>750</ins></b>
+            <!-- <b><div class="price">750</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/lamps.jpeg" alt="lamp" height="200px">
+            <b><p>lamp</p></b>
+            <b><del>600</del></b>
+            <b><ins>500</ins></b>
+            <!-- <b><div class="price">500</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/lamps.jpeg" alt="lamp" height="200px">
+            <b><p>Lamp</p></b>
+            <b><del>900</del></b>
+            <b><ins>600</ins></b>
+            <!-- <b><div class="price">600</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/watch.jpeg" alt="watch">
+            <b><p>Watch</p></b>
+            <b><del>6000</del></b>
+            <b><ins>4,000</ins></b>
+            <!-- <b><div class="price">4000</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/water bottel.jpeg" alt="WaterBottel" height="175px" width="175px">
+            <b><p>water Bottel</p></b>
+             <b><del>300</del></b>
+             <b><ins>200</ins></b>
+            <!-- <b><div class="price">200</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/'mobile.jpeg" alt="mobile" height="175px" width="175px">
+            <b><p>Mobile</p></b>
+             <b><del>2,00,000</del></b>
+             <b><ins>1,50,000</ins></b>
+            <!-- <b><div class="price">1,50,000</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/laptop.jpeg" alt="laptop" height="175px" width="200px">
+            <b><p>Laptop</p></b>
+             <b><del>90,000</del></b>
+             <b><ins>70,000</ins></b>
+            <!-- <b><div class="price">70,000</div></b> -->
+        </div>
+        <div class="item">
+            <img src="/layouts/Assests/apple.jpeg" alt="apple" height="175px" width="175px" >
+            <b><p>Apple 15</p></b>
+            <b><del>1,20,000</del></b>
+                <b><ins>90,000</ins></b>
+            <!-- <b><div class="price">90,000</div></b> -->
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div>
+            <ul>
+                <h3><li>About</li></h3>
+                <li><address>Emma Thompson
+                Flat 5B, 22 Baker Street
+                London W1U 3BW
+                United Kingdom</address></li>
+            </ul>
+            <ul>
+                <li><h3 style="text-align: center; ">Contact</h3></li>
+                <li><input type="email" placeholder="ecommerece@gmail.com"></li>
+                <li>
+                    <button>Submit</button>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
