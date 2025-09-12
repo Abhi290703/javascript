@@ -1,0 +1,100 @@
+Main Tailwind Utility Categories :
+
+
+1. Text & Font
+
+text-{color} → text color (e.g., text-red-500, text-blue-600)
+
+text-{size} → font size (e.g., text-sm, text-lg, text-2xl, text-4xl)
+
+font-{weight} → font weight (e.g., font-light, font-normal, font-bold)
+
+italic / not-italic → font style
+
+underline, line-through, no-underline → text decoration
+
+text-center, text-left, text-right, text-justify → alignment
+
+
+
+2. Background
+
+bg-{color} → background color (e.g., bg-gray-100, bg-red-500)
+
+bg-gradient-to-r → gradients (e.g., from-red-400 to-blue-500)
+
+
+
+3. Spacing
+
+m-{size} → margin (e.g., m-4, mt-2, mx-auto)
+
+p-{size} → padding (e.g., p-6, px-4, py-2)
+
+
+
+4. Borders & Radius
+
+border → default border
+
+border-{color} → border color (e.g., border-gray-300, border-red-500)
+
+border-{size} → border width (e.g., border-2, border-4)
+
+rounded → small radius
+
+rounded-lg, rounded-xl, rounded-full → bigger radiuses
+
+
+
+5. Sizing
+
+w-{size} → width (e.g., w-10, w-1/2, w-full)
+
+h-{size} → height (e.g., h-10, h-screen)
+
+min-w-, max-w-, min-h-, max-h-
+
+
+
+6. Flex & Grid
+
+flex, inline-flex
+
+flex-row, flex-col, flex-wrap
+
+justify-start, justify-center, justify-between, justify-around
+
+items-start, items-center, items-end
+
+grid, grid-cols-{n}, gap-{n}
+
+
+
+7. Effects
+
+shadow, shadow-lg, shadow-xl → box shadows
+
+opacity-{n} (e.g., opacity-50)
+
+hover:{class} (e.g., hover:bg-blue-500, hover:text-white)
+
+transition, duration-300, ease-in-out
+
+
+
+8. Positioning
+
+relative, absolute, fixed, sticky
+
+top-{n}, bottom-{n}, left-{n}, right-{n}
+
+z-{n} → z-index
+
+
+
+9. Display
+
+block, inline-block, inline, hidden
+
+flex, grid, inline-flex
