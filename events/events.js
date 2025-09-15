@@ -76,8 +76,21 @@ document.getElementById("hoverbox").addEventListener("mouseover" ,() =>{
     document.getElementById("hoverbox").style.background = "yellow"
 })
 
+document.getElementById("hoverbox").addEventListener("mouseout" ,() =>{
+    document.getElementById("hoverbox").style.background = "white"
+})
 
+document.getElementById("mousemovebox").addEventListener("mouseover", () =>{
+    console.log("Mouse is Moving inside the box")
+})
 
+document.getElementById("mouseDownbtn").addEventListener("mousedown",() =>{
+    console.log("mouse button Pressed Down");
+})
+
+document.getElementById("mouseUpbtn").addEventListener("mouseup",() =>{
+    console.log("mouse button Realesed");
+})
 
 
 
