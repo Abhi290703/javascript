@@ -46,9 +46,9 @@ function sayhello() {
 
 // by using double click function
 
-document.getElementById("btn").onclick = function () {
-    console.log("hello event property")
-}
+// document.getElementById("btn").onclick = function () {
+//     console.log("hello event property")
+// }
 
 /* 
 
@@ -58,14 +58,23 @@ function it says latest once
 
 */
 
-document.getElementById("btn").onclick = function () {
-    console.log("double click function")
-}
+// document.getElementById("btn").onclick = function () {
+//     console.log("double click function")
+// }
 
+// both click and double click
 
+document.getElementById("clickbtn").addEventListener("click",() => {
+    console.log("click event");
+})
 
+document.getElementById("dblClickBtn").addEventListener("dblclick",() =>{
+    console.log("DBL Click EVent");
+})
 
-
+document.getElementById("hoverbox").addEventListener("mouseover" ,() =>{
+    document.getElementById("hoverbox").style.background = "yellow"
+})
 
 
 
