@@ -49,66 +49,18 @@ function sayhello() {
 document.getElementById("btn").onclick = function () {
     console.log("hello event property")
 }
+
+/* 
+
+if we see here we have given same id for both the function if seen here first i have given "hello event
+property" after that "double click function" where has if seen output the output will be double click
+function it says latest once
+
+*/
+
 document.getElementById("btn").onclick = function () {
     console.log("double click function")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
