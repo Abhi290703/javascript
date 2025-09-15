@@ -37,13 +37,21 @@ in events their are some types
 
 // programs 
 
+// by using onclick event
+
 function sayhello() {
-    alert("hello! welcome ")
+    // alert("hello! welcome ")
 }
 
 
+// by using double click function
 
-
+document.getElementById("btn").onclick = function () {
+    console.log("hello event property")
+}
+document.getElementById("dbbtn").onclick = function () {
+    console.log("double click function")
+}
 
 
 
