@@ -49,7 +49,7 @@ function sayhello() {
 document.getElementById("btn").onclick = function () {
     console.log("hello event property")
 }
-document.getElementById("dbbtn").onclick = function () {
+document.getElementById("btn").onclick = function () {
     console.log("double click function")
 }
 
