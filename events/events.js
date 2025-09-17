@@ -84,7 +84,7 @@ document.getElementById("mousemovebox").addEventListener("mouseover", () =>{
     console.log("Mouse is Moving inside the box")
 })
 
-document.getElementById("mouseDownbtn").addEventListener("mousedown",() =>{
+document.getElementById("mouseDownbtn").addEventListener("mousedown",() => {
     console.log("mouse button Pressed Down");
 })
 
