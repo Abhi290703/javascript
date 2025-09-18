@@ -33,15 +33,13 @@ in events their are some types
 */
 
 
-
-
 // programs 
 
 // by using onclick event
 
-function sayhello() {
+// function sayhello() {
     // alert("hello! welcome ")
-}
+// }
 
 
 // by using double click function
@@ -62,36 +60,49 @@ function it says latest once
 //     console.log("double click function")
 // }
 
-// both click and double click
 
-document.getElementById("clickbtn").addEventListener("click",() => {
-    console.log("click event");
+
+// mouse and click operation
+
+/* their are 6 types of mouse events
+
+1. click
+2. dblclick (double click)
+3. mouseover
+4. mouseout
+5. mousemove 
+6. mouseup
+7. mousedown
+
+*/
+
+document.getElementById("click").addEventListener("click",() => {
+    console.log("click event")
 })
 
-document.getElementById("dblClickBtn").addEventListener("dblclick",() =>{
-    console.log("DBL Click EVent");
+document.getElementById("dblclick").addEventListener("dblclick",() => {
+    console.log("dblclick")
 })
 
-document.getElementById("hoverbox").addEventListener("mouseover" ,() =>{
-    document.getElementById("hoverbox").style.background = "yellow"
+document.getElementById("hoverBox").addEventListener("mouseover",() => {
+   document.getElementById("hoverBox").style.background="blue";
 })
 
-document.getElementById("hoverbox").addEventListener("mouseout" ,() =>{
-    document.getElementById("hoverbox").style.background = "white"
+document.getElementById("hoverBox").addEventListener("mouseout",() => {
+    document.getElementById("hoverBox").style.background="white";
 })
 
-document.getElementById("mousemovebox").addEventListener("mouseover", () =>{
-    console.log("Mouse is Moving inside the box")
+document.getElementById("movemouse").addEventListener("movemouse",() => {
+    console.log("mouse move event")
 })
 
-document.getElementById("mouseDownbtn").addEventListener("mousedown",() => {
-    console.log("mouse button Pressed Down");
+document.getElementById("mouseup").addEventListener("mouseup", () =>{
+    console.log("mouseup event")
 })
 
-document.getElementById("mouseUpbtn").addEventListener("mouseup",() =>{
-    console.log("mouse button Realesed");
+document.getElementById("mousedwn").addEventListener("mousedwn",() => {
+    console.log("mousedown event")
 })
-
 
 
 
