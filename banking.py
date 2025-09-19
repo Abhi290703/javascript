@@ -1,17 +1,5 @@
-user = {} # dictonary
-
-def user():
-    name = input("enter user name:")
-    if name in user:
-        print("user is exist",user)
-    else:
-        balance = flaot(input("enter balance"))
-        user[name] = balance
-        print("User" , name, "created with balance" , balance)
-
-
 def show_balance():
-    print("your balance is", balance)
+    print("Your balance is", balance)
 
 def deposit():
     global balance
@@ -30,25 +18,9 @@ def withdraw():
 
 balance = 0
 running = True
-current_user = None
 
 while running:
-    if current_user is None :
-        print("1. create_user")
-        print("2.login")
-        print("3.exit")
-
-        
-
-
-
-
-
-
-
-
-
-    print("\n1. Show Balance")
+    print("1. Show Balance")
     print("2. Deposit")
     print("3. Withdraw")
     print("4. Exit")
@@ -66,5 +38,3 @@ while running:
         print("Thank you")
     else:
         print("Enter a valid choice")
-
-#  by using dictonary store user account
