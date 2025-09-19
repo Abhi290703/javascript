@@ -1,3 +1,5 @@
+user = {} # dictonary
+
 def user():
     name = input("enter user name:")
     if name in user:
