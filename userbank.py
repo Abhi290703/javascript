@@ -1,42 +1,42 @@
-users = {}   # empty dictionary
+users = {}  # dictionary to store users and balances
 
-def create_user():
-    name = input("Enter new username: ")
+def new_user():
+    name = input("Enter username: ")
     if name in users:
         print("User already exists!")
     else:
         balance = float(input("Enter initial balance: "))
         users[name] = balance
-        print(f"User {name} created with balance {balance}")
+        print("User", name, "created with balance", balance)
 
-def show_balance(name):
-    print(f"{name}'s balance is:", users[name])
+def show_balance(user):
+    print("{user}'s balance is", users[user])
 
-def deposit(name):
+def deposit(user):
     amount = float(input("Enter amount to deposit: "))
-    users[name] += amount
+    users[user] += amount
     print("Deposited:", amount)
 
-def withdraw(name):
+def withdraw(user):
     amount = float(input("Enter amount to withdraw: "))
-    if amount <= users[name]:
-        users[name] -= amount
+    if amount <= users[user]:
+        users[user] -= amount
         print("Withdrawn:", amount)
     else:
-        print("Insufficient funds!")
+        print("Insufficient balance:", amount)
 
-running = True
 current_user = None
+running = True
 
 while running:
     if current_user is None:
-        print("\n1. Create User")
+        print("1. Create User")
         print("2. Login")
         print("3. Exit")
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            create_user()
+            new_user()
         elif choice == '2':
             name = input("Enter username: ")
             if name in users:
@@ -56,7 +56,7 @@ while running:
         print("3. Withdraw")
         print("4. Logout")
 
-        choice = input("Enter your choice: ")
+        choice = input("Enter your choice (1-4): ")
 
         if choice == '1':
             show_balance(current_user)
@@ -68,4 +68,4 @@ while running:
             print(f"Logging out {current_user}...")
             current_user = None
         else:
-            print("Invalid choice")
+            print("Enter a valid choice")
