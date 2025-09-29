@@ -76,35 +76,30 @@ function it says latest once
 
 */
 
-document.getElementById("click").addEventListener("click",() => {
-    console.log("click event")
-})
 
-document.getElementById("dblclick").addEventListener("dblclick",() => {
-    console.log("dblclick")
-})
+function sayhello(){
+    alert("all")
+}
 
-document.getElementById("hoverBox").addEventListener("mouseover",() => {
-   document.getElementById("hoverBox").style.background="blue";
-})
+// document.getElementById("btn").addEventListener("btn",() => {
+//     console.log("btn click")
+// })
 
-document.getElementById("hoverBox").addEventListener("mouseout",() => {
-    document.getElementById("hoverBox").style.background="white";
-})
+// document.getElementById("dblclick").addEventListener("dblclick",() => {
+//     console.log("db click")
+// })
 
-document.getElementById("movemouse").addEventListener("movemouse",() => {
-    console.log("mouse move event")
-})
+// document.getElementById("hover").addEventListener("hover",() => {
+//     document
+// })
 
-document.getElementById("mouseup").addEventListener("mouseup", () =>{
-    console.log("mouseup event")
-})
+// document.getElementById("btn").onclick = function(){
+//     alert("welcome")
+// }
 
-document.getElementById("mousedwn").addEventListener("mousedwn",() => {
-    console.log("mousedown event")
-})
+// document.getElementById("btn").onclick = function(){
+//     alert("say")
+// }
 
-
-
-
+// declaring by using variable
 
