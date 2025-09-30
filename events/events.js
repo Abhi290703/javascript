@@ -64,22 +64,25 @@ function it says latest once
 
 // mouse and click operation
 
-/* their are 6 types of mouse events
+/* their are some types of mouse events
 
-1. click
-2. dblclick (double click)
-3. mouseover
-4. mouseout
-5. mousemove 
-6. mouseup
-7. mousedown
+1.click
+2.dbclick
+3.mouseover : it is useful when we hover any box and something else
+4.mouseout : it is also same has the above
+5.mouseup : it refers if we press it shows the how many times press
+6.mousedown : it refers same but functionlly is different reverse of mouseup
+7.mousemouse  : it refers how many times we move the mouse it shows the how many times it moves
+
 
 */
 
 
 function sayhello(){
-    alert("all")
+    alert("alert")
 }
+
+// mouse events
 
 document.getElementById("btn").addEventListener("click",() => {
     console.log("btn click")
