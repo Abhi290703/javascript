@@ -81,25 +81,32 @@ function sayhello(){
     alert("all")
 }
 
-// document.getElementById("btn").addEventListener("btn",() => {
-//     console.log("btn click")
-// })
+document.getElementById("btn").addEventListener("click",() => {
+    console.log("btn click")
+})
 
-// document.getElementById("dblclick").addEventListener("dblclick",() => {
-//     console.log("db click")
-// })
+document.getElementById("dblclick").addEventListener("dblclick",() => {
+    console.log("db click")
+})
 
-// document.getElementById("hover").addEventListener("hover",() => {
-//     document
-// })
+document.getElementById("hover").addEventListener("mouseover",() => {
+    document.getElementById("hover").style.background = ("blue")
+})
 
-// document.getElementById("btn").onclick = function(){
-//     alert("welcome")
-// }
+document.getElementById("hover").addEventListener("mouseout",() => {
+    document.getElementById("hover").style.background = ("pink")
+})
+document.getElementById("hover").addEventListener("mousemove",() => {
+    console.log("mouse is moving inside")
+})
 
-// document.getElementById("btn").onclick = function(){
-//     alert("say")
-// }
+document.getElementById("press").addEventListener("mousedown",() =>{
+    console.log("mouse press and hold")
+})
+
+document.getElementById("press1").addEventListener("mouseup",() => {
+console.log("mouse up")
+})
 
 // declaring by using variable
 
