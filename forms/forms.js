@@ -1,23 +1,48 @@
+// document.getElementById("my form").addEventListener("submit",(e) => {
+// e.preventDefault();
+// console.log("form submitted");
+// })
+
+// document.getElementById("youtube").addEventListener("click",(e) => {
+//     e.preventDefault()
+//     console.log("click youtube")
+// })
+
+// document.getElementById("color").addEventListener("change",(e) => {
+//     alert("color changed :" + e.target.value);
+// })
+
+// document.getElementById("name").addEventListener("input",(e) => {
+//     console.log("current input :", + e.target.value)
+// })
+
+// document.getElementById("name").addEventListener("focus",(e) => {
+//     e.target.style.background = "lightblue"
+// })
+
+// document.getElementById("name").addEventListener("blur",(e) => {
+//     e.target.style.background = "white"
+// })
+
+
+
 document.getElementById("my form").addEventListener("submit",(e) => {
 e.preventDefault();
-console.log("form submitted");
+console.log("form submit");
 })
 
-document.getElementById("youtube").addEventListener("click",(e) => {
-    e.preventDefault()
-    console.log("click youtube")
+document.getElementById("color").addEventListener("change", (e) => {
+  alert("Color changed: " + e.target.value);
 })
 
-document.getElementById("color").addEventListener("change",(e) => {
-    alert("color changed :" + e.target.value);
-})
-
-document.getElementById("name").addEventListener("input",(e) => {
+document.getElementById("name").addEventListener("click",(e) => {
     console.log("current input :", + e.target.value)
 })
 
-document.getElementById("name").addEventListener("focus",(e) => {
+document.getElementById("name").addEventListener("focus", (e) => {
     e.target.style.background = "lightblue"
 })
 
-
+document.getElementById("name").addEventListener("blur", (e) => {
+    e.target.style.background = "white"
+})
