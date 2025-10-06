@@ -33,8 +33,9 @@ let pattern = new RegExp("pattern")---constructor
 */ 
 
 let pattern = /abc/;
-console.log(pattern.test("abcedf"));
+console.log(pattern.test("fghjk"));
 // here we have not used regex and directly given values 
+// here also if we given wrong values to it will not take values it shows false values to it.
 
 let pattern2 = RegExp("abc");
 console.log(pattern2.test("xyz"));
