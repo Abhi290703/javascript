@@ -36,7 +36,7 @@ let pattern = /abc/;
 console.log(pattern.test("abcedf"));
 
 let pattern2 = RegExp("abc");
-console.log(pattern2.test("xyzabc"));
+console.log(pattern2.test("xyz"));
 
 
 
