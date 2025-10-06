@@ -39,5 +39,8 @@ console.log(pattern.test("abcedf"));
 let pattern2 = RegExp("abc");
 console.log(pattern2.test("xyz"));
 
+// here we have used regexexp format it tell which one true or false according to the 
+// given variable in the declaration.
+
 
 
