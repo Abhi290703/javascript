@@ -28,6 +28,10 @@ syntax :
 let pattern = /pattern/---literal syntax
 let pattern = new RegExp("pattern")---constructor
 
+caret :
+^ - start with
+meaning : matches the beginning of a string
+example : ^a - matches any string that strings with 'a'
 
 
 */ 
@@ -42,6 +46,14 @@ console.log(pattern2.test("xyz"));
 
 // here we have used regexexp format it tell which one true or false according to the 
 // given variable in the declaration.
+
+
+let show = /^abc/;
+console.log(show.test("abc"));
+console.log(show.test("gncvbnm"));
+// in this caret form we ^ this represents it should start from that letter only if not it throws an error
+
+
 
 
 
