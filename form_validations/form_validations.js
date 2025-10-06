@@ -19,3 +19,24 @@ document.getElementById("myform").addEventListener("submit", function(e) {
         e.preventDefault();
     }
 })
+
+/*
+
+regex :
+why :
+syntax :
+let pattern = /pattern/---literal syntax
+let pattern = new RegExp("pattern")---constructor
+
+
+
+*/ 
+
+let pattern = /abc/;
+console.log(pattern.test("abcedf"));
+
+let pattern2 = RegExp("abc");
+console.log(pattern2.test("xyzabc"));
+
+
+
