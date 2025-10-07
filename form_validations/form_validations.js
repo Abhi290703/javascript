@@ -52,9 +52,9 @@ example : a$
 // given variable in the declaration.
 
 
-// let show = /^abc/;
-// console.log(show.test("abc"));
-// console.log(show.test("gncvbnm"));
+let show = /^abc/;
+console.log(show.test("abc"));
+console.log(show.test("gncvbnm"));
 // in this caret form we ^ this represents it should start from that letter only if not it throws an error
 
 let show2 = /a$/;
