@@ -40,8 +40,8 @@ example : a$
 
 */ 
 
-// let pattern = /abc/;
-// console.log(pattern.test("fghjk"));
+let pattern = /abc/;
+console.log(pattern.test("fghjk"));
 // here we have not used regex and directly given values 
 // here also if we given wrong values to it will not take values it shows false values to it.
 
