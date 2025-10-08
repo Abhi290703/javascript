@@ -17,7 +17,8 @@ syntax :
 filter :
 extracts only satisfy elements it should be either (true/false)
 
-
+syntax :
+("array.filter(function(element, index, array) { ... })")
 
 */
 
