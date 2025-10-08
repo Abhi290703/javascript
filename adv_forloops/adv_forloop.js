@@ -11,8 +11,13 @@ syntax :
 Reduce :
 it reduce an array to single value
 
+syntax :
+("array.reduce(function(accumulator, currentValue, index, array) { ... }, initialValue)")
+
 filter :
 extracts only satisfy elements it should be either (true/false)
+
+
 
 */
 
