@@ -43,14 +43,13 @@ function filterProducts() {
 }
 
 // Add to Cart
-function addToCart(index) {
+function addToCart() {
   const product = products[index];
   const existingProduct = cart.find(item => item.name === product.name);
 
   if (existingProduct) {
     existingProduct.quantity += 1;
   } else {
-    // Use spread syntax to copy product properties
     cart.push({ ...product, quantity: 1 });
   }
 
