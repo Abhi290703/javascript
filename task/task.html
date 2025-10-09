@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Shopping Cart</title>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <h1 class="text-4xl font-bold text-center border bg-gray-500 text-white py-5">
+    Products
+  </h1>
+
+  <!-- Filter Section -->
+  <div class="text-center mt-5">
+    <input type="text" id="nameFilter" placeholder="Enter product name" class="border rounded-sm p-1">
+    <button class="border rounded-sm bg-pink-200 cursor-pointer p-1" onclick="filterProducts()">Filter Products</button>
+  </div>
+
+  <!-- Product List -->
+  <div class="flex justify-center m-5 justify-evenly flex-wrap" id="productContainer"></div>
+
+  <!-- 🛒 Cart Section (Moved BELOW Products) -->
+  <div class="p-4">
+    <h2 class="text-center text-gray-800 text-xl font-bold mb-3">🛒 Your Cart</h2>
+    <div id="cartContainer" class="flex flex-col items-center m-5"></div>
+  </div>
+
+  <script src="./task.js"></script>
+</body>
+</html>
