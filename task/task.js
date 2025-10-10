@@ -16,7 +16,6 @@ function displayProducts(list) {
     const card = document.createElement("div");
     card.className = "border m-2 w-60 text-center rounded-lg bg-blue-200 p-3";
 
-    // Disable Add button if out of stock
     const disabled = product.instock ? "" : "disabled";
     const buttonText = product.instock ? "Add to Cart" : "Out of Stock";
     const buttonStyle = product.instock ? "bg-pink-300 hover:bg-pink-400" : "bg-gray-400 cursor-not-allowed";
@@ -42,8 +41,8 @@ function filterProducts() {
   displayProducts(filtered);
 }
 
-// Add to Cart
-function addToCart() {
+// ✅ Add to Cart
+function addToCart(index) {
   const product = products[index];
   const existingProduct = cart.find(item => item.name === product.name);
 
@@ -56,7 +55,23 @@ function addToCart() {
   displayCart();
 }
 
-//  Display Cart
+// ✅ Increase quantity
+function increaseQuantity(index) {
+  cart[index].quantity += 1;
+  displayCart();
+}
+
+// ✅ Decrease quantity
+function decreaseQuantity(index) {
+  if (cart[index].quantity > 1) {
+    cart[index].quantity -= 1;
+  } else {
+    cart.splice(index, 1); // remove if quantity becomes 0
+  }
+  displayCart();
+}
+
+// ✅ Display Cart
 function displayCart() {
   const cartContainer = document.getElementById("cartContainer");
   cartContainer.innerHTML = '';
@@ -66,19 +81,24 @@ function displayCart() {
     return;
   }
 
-  cart.forEach(item => {
+  cart.forEach((item, index) => {
     const cartItem = document.createElement("div");
     cartItem.className = "border p-2 w-80 mb-2 bg-gray-100 rounded";
     cartItem.innerHTML = `
       <div class="flex justify-between items-center">
-        <span>${item.name} (x${item.quantity})</span>
+        <span>${item.name}</span>
+        <div class="flex items-center space-x-2">
+          <button class="bg-gray-300 px-2 rounded" onclick="decreaseQuantity(${index})">−</button>
+          <span>${item.quantity}</span>
+          <button class="bg-gray-300 px-2 rounded" onclick="increaseQuantity(${index})">+</button>
+        </div>
         <span>₹${item.price * item.quantity}</span>
       </div>
     `;
     cartContainer.appendChild(cartItem);
   });
 
-  //  Show total
+  // ✅ Show total
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const totalElement = document.createElement("div");
   totalElement.className = "font-bold mt-2";
