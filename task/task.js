@@ -42,7 +42,7 @@ function filterProducts() {
   displayProducts(filtered);
 }
 
-// ✅ Add to Cart
+// Add to Cart
 function addToCart(index) {
   const product = products[index];
   const existingProduct = cart.find(item => item.name === product.name);
@@ -56,13 +56,13 @@ function addToCart(index) {
   displayCart();
 }
 
-// ✅ Increase quantity
+// Increase quantity
 function increaseQuantity(index) {
   cart[index].quantity += 1;
   displayCart();
 }
 
-// ✅ Decrease quantity
+// Decrease quantity
 function decreaseQuantity(index) {
   if (cart[index].quantity > 1) {
     cart[index].quantity -= 1;
@@ -72,7 +72,7 @@ function decreaseQuantity(index) {
   displayCart();
 }
 
-// ✅ Display Cart
+// Display Cart
 function displayCart() {
   const cartContainer = document.getElementById("cartContainer");
   cartContainer.innerHTML = '';
@@ -99,7 +99,7 @@ function displayCart() {
     cartContainer.appendChild(cartItem);
   });
 
-  // ✅ Show total
+  // Show total
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const totalElement = document.createElement("div");
   totalElement.className = "font-bold mt-2";
