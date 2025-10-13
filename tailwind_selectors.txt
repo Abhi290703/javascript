@@ -98,3 +98,13 @@ z-{n} → z-index
 block, inline-block, inline, hidden
 
 flex, grid, inline-flex
+
+10. justify-items :
+
+justify-items-start
+justify-items-end
+justify-items-end-safe
+justify-items-center
+justify-items-center-safe
+justify-items-stretch
+justify-items-normal
