@@ -1,0 +1,30 @@
+Javascript concepts :
+1.Intro
+2.variables
+3.Datatypes
+4.Type conversitions
+5.Operators
+6.Control flow statements
+7.Iterators
+8.Loops
+9.Functions
+    Function declaration & expression
+    Parameters and return values
+    Arrow functions (=>)
+    Default parameters
+    Rest parameters (...args)
+    Callback functions
+    IIFE (Immediately Invoked Function Expressions)
+    Scope and Closures
+    Hoisting in functions
+10.Objects and arrays
+11.DOM
+12.ES6+
+13.Advance Concepts of Javascript
+14.Error Handling
+15.API'S
+16.
+
+
+
+
