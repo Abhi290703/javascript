@@ -57,4 +57,29 @@ else{
     console.log("you are not eligible for discount");
 }
 
+// switch cases
+
+let day = "fri";
+switch(day){
+    case "mon":
+        console.log("today is monday");
+        break;
+        case "tue":
+            console.log("today is tuesday");
+            break;
+        case "wed":
+            console.log("today is wednesday");
+            break;
+        case "thu":
+            console.log("today is thursday");
+            break;
+        case "fri":
+            console.log("today is friday");
+            break; 
+        case "sat":
+            console.log("today is saturday");
+            break;
+        default:
+            console.log("today is sunday");
+}
 
