@@ -1,0 +1,142 @@
+What are conditional statements ? 
+It control the flow execution is called conditional statements
+
+their are types of conditional statements:
+1.If
+2.if-else
+3.else-if
+4.nested-if
+
+If-Else :
+it is a block of code if the condition is true it executes the if statement if condition is false 
+it executes the else block.
+
+Syntax :
+    if (condition){
+        // block of code
+    }
+    else{
+        // block of code
+    }
+
+else-if :
+it is used to check the multiple condition until some condition has to be true
+
+Syntax :
+    if (condition){
+        // block of code
+    }
+    else-if{
+        //block of code
+    }
+    else-if{
+        //block of code
+    }
+    else{
+        //block of code
+    }
+
+Switch statements :
+    switch statement is used execute one block of code out number of statement based on the value of 
+    expression.
+
+    important :
+        1.it executes the code at which case it's satsifies that particular case will execute
+        2.
+
+    Syntax :
+        switch(expression):
+            case 1 :
+                // block of code;
+                break;
+            case 2 :
+                // block of code;
+                break;
+            case 3 :
+                // block of code;
+                break;
+             default:
+                //block of code
+        
+Typecasting :
+    converting one data type into another data type is called Typecasting
+
+the difference between typeconversion and typequotation
+
+type-conversion : 
+                    where user directly modifies the code is called typeconversion.
+the manually which is developed is called is explict conversion.
+
+typequotation :
+                typequotation is also called has implict conversion.
+                it is used by engines.
+
+if we want to convert one type to another typee we have to use different type conversions.
+
+their are two types of type conversions
+1.implict conversion
+2.explict conversion
+
+Implict conversion : where system automatically converts the conversions.
+
+examples :
+
+let a = "a"+5;
+console.log(a);
+
+let b = "string" + 6;
+console.log(b);
+
+let c = 6 + true;
+console.log(c);
+
+let d = "10" - 2;
+console.log(d);
+
+these are the examples of typeconversions
+
+explict conversions : where user have to convert the conversions
+
+examples :
+
+string -> Number conversion :
+let abhi = number("1234") ;
+console.log("abhi");
+
+number -> string :
+let str = string("1134");
+console.log(str)
+
+boolean -> number :
+let bool = number(true);
+console.log("bool");
+
+number -> boolean :
+let num = boolean(0);
+console.log(num);
+
+what are loops ? 
+to execute a block of code multiple times until some condition has to satsified 
+is called loops.
+
+1.for
+2.while
+3.do while
+
+for : when we know the exact number of iterations
+
+syntax : 
+        for(initilization;condition;increment/decrement){
+            block of code
+        }
+
+flow of execution : 
+1.initilization
+2.condition
+3.if condition is true "enters into block of code"   if false exits from the block of code
+4.conditon true
+5.comes to increment
+6.checks condition
+7.block of code
+
+
