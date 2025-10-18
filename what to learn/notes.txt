@@ -139,4 +139,25 @@ flow of execution :
 6.checks condition
 7.block of code
 
+For loops : 
+            block of code will executed repeatedly until some condition has to satsified.
+syntax :
+        for (initilization;condition;increment/decrement)
+        for(let -> variable declaration)
+
+while :
+
+    syntax : 
+            while{
+                condition
+            }
+
+functions : 
+
+
+
+
+
+
+
 
