@@ -33,11 +33,9 @@ const apiurl = "https://dummyjson.com/products";
 fetch(apiurl)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data.products); // check data in console
+    console.log(data.products); 
 
     const productsContainer = document.getElementById("products");
-
-    // Render products
     productsContainer.innerHTML = data.products.map((product) => {
         return (`
           <div class="product-card">
@@ -59,8 +57,25 @@ fetch(apiurl)
     console.log("Error occurred:", error);
   });
 
+  const fetchproducts = async () => {
+    const response = await fetch(apiurl);
+    const data = await response.json();
+    console.log(data.products);
+  };
 
+  const btn = document.getElementById("btn").addEventListener("click", fetchproducts);
 
+  function showDetails(product) {
+    document.getElementById("product-title").innerText = product.title;
+    document.getElementById("product-image").src = product.image;
+    document.getElementById("product-description").innerText = product.description;
+    document.getElementById("product-price").innerText = `$${product.price}`;
+  }
+   document.getElementById("overlay").style.display = "block";
+  document.getElementById("details").style.display = "block";
 
-
+document.getElementById("closeBtn").addEventListener("click", () => {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("details").style.display = "none";
+});
 
