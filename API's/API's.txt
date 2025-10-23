@@ -1,0 +1,30 @@
+what is API ?
+API stands for Application Programming Interface
+
+1.API acts like meditator between 2 websites or apps etc.
+2.API doesn't have any databases it connects with the backend servers.
+3.API are used large wide of applications.
+4.user asks for data it sends data back response by JSON format.
+
+The relation between database and API is
+    the database stores the data when ever the user asks it retrives the data and passes.
+    where has API's play a meditator role between 2 apps.
+
+Syntax of API'S :
+    fetch()
+        .then()
+        .then()
+        .catch()
+    
+fetch("URL will be passed in it")
+then(" convert response to JSON format ")
+then(" user data ")
+catch(" )
+
+
+Types of API's : 
+                web API
+                Browser API
+                Third-Party API
+
+
