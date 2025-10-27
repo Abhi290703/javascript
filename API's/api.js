@@ -69,3 +69,4 @@ const fetchproducts = async () => {
 
 document.getElementById("btn").addEventListener("click", fetchproducts);
 
+
