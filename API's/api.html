@@ -5,22 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API</title>
     <link rel="stylesheet" href="api.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>API Documentation</h1>
+    <h1 class="text-xl font-medium">API Documentation</h1>
 
-    <div id="products"></div>
+    <div id="products" class="flex flex-wrap gap-10 justify-center hover:translate-y-0 transition-transform duration-300">
+        <div class="text-xl text-red-300">KNOW MORE</div>
+    </div>
 
-    <button id="btn">Fetch Button</button>
-
-    <!-- Pop file details -->
-     <div id="overlay"></div>
-    <div id="details"></div>
-    <h2 id="product-title"></h2>
-    <img id="product-image" alt="">
-    <p id="product-description"></p>
-    <p id="product-price"></p>
-    <button id="closeBtn">Close</button>
+    <button id="btn" class="bg-red-500 text-xl  rounded-md">Fetch Button</button>
 
     <script src="/API's/api.js"></script>
 </body>
