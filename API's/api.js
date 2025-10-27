@@ -30,25 +30,28 @@ fetch() : it is used to make a request to the server by providing the URL of the
 
 const apiurl = "https://dummyjson.com/products";
 
+// Fetch and display all products
 fetch(apiurl)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data.products); 
+    console.log(data.products);
 
     const productsContainer = document.getElementById("products");
-    productsContainer.innerHTML = data.products.map((product) => {
-        return (`
-          <div class="product-card">
+
+    // Display products
+    productsContainer.innerHTML = data.products
+      .map((product) => {
+        return `
+          <div class="product-card rounded-xl shadow-md hover:translate-y-0 transition-transform duration-300 text-center" onclick='showDetails(${JSON.stringify(product)})'>
             <h2>${product.title}</h2>
             <p>Price: $${product.price}</p>
-            <p>${product.description}</p>
             <img src="${product.thumbnail}" alt="${product.title}" width="200"/>
           </div>
-        `);
+        `;
       })
       .join("");
 
-    // Log each product
+    // Log each product in console
     data.products.forEach((product) => {
       console.log(`Product: ${product.title}, Price: $${product.price}`);
     });
@@ -57,25 +60,12 @@ fetch(apiurl)
     console.log("Error occurred:", error);
   });
 
-  const fetchproducts = async () => {
-    const response = await fetch(apiurl);
-    const data = await response.json();
-    console.log(data.products);
-  };
+// Async fetch on button click
+const fetchproducts = async () => {
+  const response = await fetch(apiurl);
+  const data = await response.json();
+  console.log(data.products);
+};
 
-  const btn = document.getElementById("btn").addEventListener("click", fetchproducts);
-
-  function showDetails(product) {
-    document.getElementById("product-title").innerText = product.title;
-    document.getElementById("product-image").src = product.image;
-    document.getElementById("product-description").innerText = product.description;
-    document.getElementById("product-price").innerText = `$${product.price}`;
-  }
-   document.getElementById("overlay").style.display = "block";
-  document.getElementById("details").style.display = "block";
-
-document.getElementById("closeBtn").addEventListener("click", () => {
-  document.getElementById("overlay").style.display = "none";
-  document.getElementById("details").style.display = "none";
-});
+document.getElementById("btn").addEventListener("click", fetchproducts);
 
