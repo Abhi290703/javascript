@@ -23,9 +23,16 @@ syntax :
 */
 
 // program
-let numbers = [1,2,3,4,5]
-let distances = numbers.map(num => num * 2)
-console.log(distances)
+
+// extracting properties and objects
+
+let users = [
+    {name : "Nuni",age : 22},
+    {name : "Nani",age : 22},
+    {name : "nanni",age : 22}
+]
+let names = users.map(user => user.name) 
+console.log(users)
 
 
 
