@@ -26,3 +26,19 @@ const {emp_name:yo , emp_age:yo_age , ...relatedperson} = person
 console.log("yo:",yo);
 console.log("yo_age:",yo_age);
 console.log("relatedperson:",relatedperson);
+
+// example 3 : Nested destructuring
+
+const student = {
+    name: "John",
+    age: 21,
+    subjects: {
+        math: 90,
+        science: 85
+    }
+}
+const {name:student_name, age:student_age, subjects: {math:math_score, science:science_score}} = student
+console.log("student_name:",student_name);
+console.log("student_age:",student_age);
+console.log("math_score:",math_score);
+console.log("science_score:",science_score);
